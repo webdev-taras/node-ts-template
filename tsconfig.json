@@ -3,6 +3,7 @@
     "module": "NodeNext", // "CommonJS"
     "moduleResolution": "NodeNext", // "Node"
     "target": "ES2020", // "ES3", "ES2016"
+    "resolveJsonModule": true, /* in case you are importing JSON files */
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
     "strict": true,                                      /* Enable all strict type-checking options. */
@@ -11,4 +12,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["src/**/*"],
+  "exclude": [
+    "src/**/*.test.ts"
+  ]
 }

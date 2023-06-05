@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest", // Allows the use of modern ECMAScript features
+    "sourceType": "module" // Allows for the use of imports
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "root": true
+}
